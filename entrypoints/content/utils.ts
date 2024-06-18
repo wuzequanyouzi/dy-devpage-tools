@@ -24,7 +24,7 @@ const querySelectorAll = (className: string) => {
 }
 
 export const getSearchBtnDom = ():HTMLDivElement => {
-  const BtnList = querySelectorAll("index-module__filter-btn--");
+  const BtnList = querySelectorAll("index-module__filter-btn--") || querySelectorAll("filter-btn");
   return BtnList[0] as HTMLDivElement;
 }
 
